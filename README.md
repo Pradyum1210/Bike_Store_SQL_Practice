@@ -1,95 +1,111 @@
-📘 Bike Store SQL Project – README
+# 📘 Bike Store SQL Project – Complete Database Analysis
 
-This project contains SQL queries written for the Bike Store database covering basic to advanced SQL concepts including joins, aggregate functions, window functions, subqueries, and CTEs.
+This project contains SQL queries written for the **Bike Store Database**, covering everything from basic SELECT statements to advanced SQL concepts such as **joins, aggregate functions, window functions, subqueries, and CTEs**.
 
-🏗 Database Used
+It is ideal for SQL learners, beginners preparing for interviews, and anyone practicing real-world database analytics.
 
-Database Name: bike_store
+---
 
-Includes tables such as:
+## 🏗️ 1. Database Used
 
-customers
+**Database Name:** `bike_store`
 
-products
+The database includes multiple relational tables representing a real retail environment.
 
-categories
+### 📂 Bike Store Database Structure
 
-orders
+| Table Name     | Description |
+|----------------|-------------|
+| `customers`    | Customer personal and contact details |
+| `products`     | All products sold by the store |
+| `categories`   | Product categories (e.g., Road, Mountain, Electric) |
+| `brands`       | Bicycle brand names |
+| `orders`       | Customer orders with date and staff info |
+| `order_items`  | List of purchased items for each order |
+| `stores`       | Store branches and their locations |
+| `staffs`       | Employees working in each store |
+| `stocks`       | Available stock per product per store |
 
-order_items
+---
 
-stores
+## 🧾 2. Query Highlights
 
-staffs
+### 🔹 **Basic SQL Queries**
+- Retrieve all customer details  
+- Filter products based on price range  
+- Sort customers alphabetically  
+- Display orders from a specific year  
+- Show all store contact details  
 
-brands
+---
 
-stocks
+### 🔹 **Joins & Filtering**
+- Fetch product details along with their **brand names**  
+- Get products with **low stock levels**  
+- Retrieve complete order details with **customer + store info**  
+- Join multiple tables for combined insights  
 
-📂 Query Highlights
-🔹 Basic SQL Queries
+---
 
-Retrieve customer details
+### 🔹 **Aggregate & Summary Queries**
+- Count how many products exist  
+- Count total orders placed by each customer  
+- Find the **top most expensive** products  
+- Calculate **total sales per store** (SUM of order amounts)  
 
-Display product price filters
+---
 
-Sort customers alphabetically
+### 🔹 **Grouping & HAVING Clause**
+- Customers with **more than 3 orders**  
+- Total quantity ordered for each product  
+- Minimum/maximum price per brand  
+- Customers whose spending is **above the average**  
 
-Show orders from a specific year
+---
 
-List store contact details
+## 📊 3. Advanced SQL Components
 
-🔹 Joins and Filtering
+### 🏅 **Window Functions**
+Used for ranking and analytical insights, such as:
 
-Fetch product details along with brand names
+- Ranking brands based on **average product price**  
+- Identify **best-selling employee** in each store  
+- Determine **top loyal customers** based on order count  
 
-Show products with low stock
+---
 
-Retrieve order details with customer and store info
+### 🧩 **Common Table Expressions (CTEs)**
+CTEs make complex queries clean and readable. Examples include:
 
-🔹 Aggregate Functions
+- Calculating **total revenue per customer**  
+- Finding the **latest order per customer** using  
+  `CTE + ROW_NUMBER()`  
+- Generating temporary result sets for step-by-step analysis  
 
-Count the number of products
+---
 
-Count total orders per customer
+## 📌 4. Key Problem Statements Solved
 
-Find top expensive products
+| Category | Example Problems Solved |
+|----------|---------------------------|
+| **Basic Queries** | Show all customers, filter products, sort results |
+| **Intermediate Queries** | Joins, grouping, conditional filtering |
+| **Advanced SQL** | Window functions, ranking, subqueries, CTE-based analytics |
 
-Calculate total sales per store
+---
 
-🔹 Grouping and Having Clause
+## 🎯 5. Skills Practiced
 
-Find customers with more than 3 orders
+- SQL querying & optimization  
+- Analytical problem solving using SQL  
+- Real-world business querying scenarios  
 
-Show quantity ordered per product
+---
 
-Minimum/maximum pricing per brand
+## 🛠️ 6. Tools & Technologies
+- MySQL 
+- SQL Workbench / pgAdmin / SSMS  
+- Bike Store sample dataset  
 
-Customers spending above average
+---
 
-📊 Advanced SQL Components
-🏅 Window Functions
-
-Used for ranking and analytical insights:
-
-Rank brands based on average product price
-
-Identify best-selling employee per store
-
-Top loyal customers based on order count
-
-🧩 Common Table Expressions (CTE)
-
-Create temporary result sets for complex queries
-
-Example: Calculating total revenue per customer
-
-Fetching latest order per customer using CTE + window function
-
-📌 Key Problem Statements Solved
-Category	Example Problems Solved
-Basic Queries	Show all customers, filter products, sort output
-
-Intermediate	Grouping data, joins, conditional filtering
-
-Advanced SQL	Window functions, subqueries, CTEs, ranking queries
